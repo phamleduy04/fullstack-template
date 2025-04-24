@@ -4,9 +4,10 @@
   "description": "fullstack-template",
   "main": "",
   "scripts": {
-    "lint:all": "(cd frontend && npm run eslint) && (cd backend && npm run eslint)",
-    "install:all": "(cd frontend && npm install) && (cd backend && npm install)",
-    "install:all-pnpm": "(cd frontend && pnpm install) && (cd backend && pnpm install)"
+    "dev": "pnpm -r --stream dev",
+    "build": "pnpm -r build",
+    "eslint": "pnpm -r eslint"
+
   },
   "keywords": [],
   "author": "",

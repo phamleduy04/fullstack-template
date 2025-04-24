@@ -23,10 +23,10 @@ const apiLimiter = rateLimit({
 // Apply the rate limiting middleware to API calls only
 // app.use('/api', apiLimiter)
 
-app.use('*', apiLimiter);
+app.use('*wildcard', apiLimiter);
 
 // Express configuration
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT ?? 3000);
 app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, '../public')));
