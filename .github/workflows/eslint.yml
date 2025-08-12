@@ -22,5 +22,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - run: npm run install
-      - run: npm run eslint
+      - run: pnpm install
+      - run: pnpm run eslint
